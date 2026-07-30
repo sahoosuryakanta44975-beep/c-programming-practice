@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Git Push Quick",
+      "type": "shell",
+ "command": "git add . ; git commit -m '${input:commitMsg}' ; git push",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMsg",
+      "type": "promptString",
+      "description": "Commit message likho",
+      "default": "Updated code"
+    }
+  ]
+}
